@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Academics | Al-Bushrah International Academy</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container">
+    <nav class="nav">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo.png" alt="School Logo">
+        <div>
+          <b>Al-Bushrah International Academy</b>
+          <small>Knowledge • Character • Excellence</small>
+        </div>
+      </a>
+      <div class="navlinks">
+        <a href="about.html">About</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="academics.html">Academics</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-cta">
+        <a class="btn btn-ghost" href="contact.html">Call / WhatsApp</a>
+        <button class="menuBtn" id="menuBtn" aria-expanded="false">Menu</button>
+      </div>
+    </nav>
+    <div class="mobileMenu" id="mobileMenu">
+      <a href="about.html">About</a>
+      <a href="admissions.html">Admissions</a>
+      <a href="academics.html">Academics</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="breadcrumb">Home / Academics</div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="card p24">
+      <p class="kicker">Academics</p>
+      <h1 style="margin:6px 0 10px">Our School Sections</h1>
+      <div class="grid3">
+        <div class="card p24" style="box-shadow:none">
+          <h3 class="h3">Nursery</h3>
+          <p class="small">Early learning, literacy, numeracy, and social development.</p>
+        </div>
+        <div class="card p24" style="box-shadow:none">
+          <h3 class="h3">Primary</h3>
+          <p class="small">Solid foundation in core subjects and confidence building.</p>
+        </div>
+        <div class="card p24" style="box-shadow:none">
+          <h3 class="h3">Junior Secondary</h3>
+          <p class="small">Strong academics, discipline, and preparation for senior level.</p>
+        </div>
+      </div>
+
+      <h2 class="h2" style="margin-top:16px">Core Subjects</h2>
+      <ul class="small">
+        <li>English Language</li>
+        <li>Mathematics</li>
+        <li>Basic Science & Technology</li>
+        <li>Social Studies</li>
+        <li>Computer Studies</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="powered">Website powered by <b>Anintu Tech Solutions</b></div>
+  </div>
+</footer>
+
+<script>
+  const btn = document.getElementById('menuBtn');
+  const menu = document.getElementById('mobileMenu');
+  btn?.addEventListener('click', () => {
+    const isOpen = menu.classList.toggle('show');
+    btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+</script>
+</body>
+</html>

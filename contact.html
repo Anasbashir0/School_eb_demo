@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Al-Bushrah International Academy</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container">
+    <nav class="nav">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo.png" alt="School Logo">
+        <div>
+          <b>Al-Bushrah International Academy</b>
+          <small>Knowledge • Character • Excellence</small>
+        </div>
+      </a>
+      <div class="navlinks">
+        <a href="about.html">About</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="academics.html">Academics</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-cta">
+        <a class="btn btn-ghost" href="contact.html">Call / WhatsApp</a>
+        <button class="menuBtn" id="menuBtn" aria-expanded="false">Menu</button>
+      </div>
+    </nav>
+    <div class="mobileMenu" id="mobileMenu">
+      <a href="about.html">About</a>
+      <a href="admissions.html">Admissions</a>
+      <a href="academics.html">Academics</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="breadcrumb">Home / Contact</div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="split">
+      <div class="card p24">
+        <p class="kicker">Contact</p>
+        <h1 style="margin:6px 0 10px">Get in Touch</h1>
+        <p class="small">Call or WhatsApp our admin office for admissions and enquiries.</p>
+
+        <div style="margin-top:12px">
+          <p class="small"><b>Phone:</b> +234 700 000 0000</p>
+          <p class="small"><b>Email:</b> info@schoolname.com</p>
+          <p class="small"><b>Address:</b> 12 Example Street, Your City, Nigeria</p>
+        </div>
+
+        <!-- Replace 2347000000000 with real number -->
+        <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap">
+          <a class="btn btn-primary" href="https://wa.me/2347000000000?text=Hello%20I%20want%20to%20enquire%20about%20admissions." target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn btn-ghost" href="tel:+2347000000000">Call Now</a>
+        </div>
+
+        <p class="formNote" style="margin-top:10px">
+          Tip: Add Google Map later as an upgrade.
+        </p>
+      </div>
+
+      <div class="card p24">
+        <h2 class="h2">Send a Message</h2>
+        <form class="form" onsubmit="return false;">
+          <label>Full Name</label>
+          <input placeholder="Your name" required>
+
+          <label>Phone</label>
+          <input placeholder="+234..." required>
+
+          <label>Message</label>
+          <textarea placeholder="Type your message..." required></textarea>
+
+          <p class="formNote">This demo form can be connected to Email/WhatsApp/Google Forms as an upgrade.</p>
+          <button class="btn btn-primary" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="powered">Website powered by <b>Anintu Tech Solutions</b></div>
+  </div>
+</footer>
+
+<script>
+  const btn = document.getElementById('menuBtn');
+  const menu = document.getElementById('mobileMenu');
+  btn?.addEventListener('click', () => {
+    const isOpen = menu.classList.toggle('show');
+    btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+</script>
+</body>
+</html>

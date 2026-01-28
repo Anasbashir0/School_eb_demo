@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admissions | Al-Bushrah International Academy</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container">
+    <nav class="nav">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo.png" alt="School Logo">
+        <div>
+          <b>Al-Bushrah International Academy</b>
+          <small>Knowledge • Character • Excellence</small>
+        </div>
+      </a>
+      <div class="navlinks">
+        <a href="about.html">About</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="academics.html">Academics</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-cta">
+        <a class="btn btn-ghost" href="contact.html">Call / WhatsApp</a>
+        <button class="menuBtn" id="menuBtn" aria-expanded="false">Menu</button>
+      </div>
+    </nav>
+    <div class="mobileMenu" id="mobileMenu">
+      <a href="about.html">About</a>
+      <a href="admissions.html">Admissions</a>
+      <a href="academics.html">Academics</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="breadcrumb">Home / Admissions</div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="split">
+      <div class="card p24">
+        <p class="kicker">Admissions</p>
+        <h1 style="margin:6px 0 10px">How to Apply</h1>
+        <p class="small">
+          Admissions are open for Nursery, Primary, and Junior Secondary School. Submit your details below,
+          and our admin office will contact you.
+        </p>
+
+        <h2 class="h2" style="margin-top:14px">Requirements</h2>
+        <ul class="small">
+          <li>Passport photograph (child)</li>
+          <li>Birth certificate</li>
+          <li>Previous school report (if applicable)</li>
+        </ul>
+      </div>
+
+      <div class="card p24">
+        <h2 class="h2">Admission Interest Form</h2>
+        <form class="form" onsubmit="return false;">
+          <label>Parent/Guardian Name</label>
+          <input placeholder="Full name" required>
+
+          <label>Phone Number</label>
+          <input placeholder="+234..." required>
+
+          <label>Child’s Name</label>
+          <input placeholder="Child name" required>
+
+          <label>Applying For</label>
+          <select required>
+            <option value="">Select class/section</option>
+            <option>Nursery</option>
+            <option>Primary</option>
+            <option>JSS</option>
+          </select>
+
+          <label>Message (Optional)</label>
+          <textarea placeholder="Any questions or extra info..."></textarea>
+
+          <p class="formNote">Note: This demo form does not submit anywhere yet. We can connect it to WhatsApp/Email/Google Forms as an upgrade.</p>
+
+          <button class="btn btn-primary" type="submit">Submit Interest</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="powered">Website powered by <b>Anintu Tech Solutions</b></div>
+  </div>
+</footer>
+
+<script>
+  const btn = document.getElementById('menuBtn');
+  const menu = document.getElementById('mobileMenu');
+  btn?.addEventListener('click', () => {
+    const isOpen = menu.classList.toggle('show');
+    btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+</script>
+</body>
+</html>
